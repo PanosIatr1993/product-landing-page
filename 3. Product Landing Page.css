@@ -1,0 +1,271 @@
+body {
+    background-color: lavender;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+    margin-bottom: 15px;
+}
+
+#header-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+#nav-bar {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 100%;
+}
+
+.nav-link:hover {
+    color: silver;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+.heading, .small-text {
+    width: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    color: magenta;
+    margin: auto;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.small-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#email {
+    display: block;
+    font-size: 15px;
+    margin: auto;
+    width: 35%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+[type='submit'] {
+    display: block;
+    font-size: 15px;
+    background-color: blueviolet;
+    color: white;
+    border: 0;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 90px;
+    height: 30px;
+}
+
+[type='submit']:hover {
+    background-color: darkviolet;
+    border-radius: 50px;
+    opacity: 0.7;
+    transition: border-radius 0.5s linear, background-color 1s, opacity 0.5s;
+}
+ 
+#features {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.a {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    color: darkviolet;
+    margin: auto;
+}
+
+i {
+    align-self: center;
+    width: 5%;
+}
+
+.b {
+    width: 80%;
+}
+
+h2 {
+    color: blueviolet;
+    font-size: 25px;
+}
+ 
+.a p, .b p {
+    color: navy;
+    font-size: 18px;
+    text-align: justify;
+}
+
+#video {
+    display: block;
+    margin: auto;
+    height: 500px;
+    width: 75%;
+    border: 0;
+    margin-bottom: 30px;
+}
+
+#prices {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    object-fit: cover;  
+}
+
+.prices {
+    width: 25%;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+#prices h2 {
+    font-size: 15px;
+    background-color: navy;
+    margin: 0;
+    color: lavender;
+}
+
+#prices img {   
+    width: 100%;
+    object-fit: cover;
+}
+
+#prices p {
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+
+#prices [type='button'] {
+    display: block;
+    font-size: 15px;
+    background-color: blueviolet;
+    color: white;
+    border: 0;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 90px;
+    height: 30px;
+}
+
+footer {
+    height: 8%;
+    width: 80%;
+    margin: auto;
+    background-color: blueviolet;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+
+ul li {
+    margin: 5px;
+}
+
+ul > li > a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer p {
+    color: white;
+    font-size: 15px;
+    background-color: blueviolet;
+    margin-top: 0;
+    padding-right: 10px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 400px) {
+    
+    #header {
+      flex-direction: column;
+      padding-bottom: 10px;
+    }
+
+    #header-img {
+      margin: auto;
+    }
+
+    #nav-bar {
+      width: 100%;
+      margin-top: 10px;
+      justify-content: space-evenly;
+    }
+
+    #features {
+      display: block;
+      width: 100%;
+      margin: 0;
+    }
+
+    .a {
+      display: unset;
+    }
+
+    i {
+      width: 100%;
+      text-align: center;
+    }
+
+    .b {
+      margin: auto;
+      text-align: center;
+    }
+
+    #video {
+      width: 100%;
+    }
+
+    #prices {
+      display: unset;
+    }
+
+    .prices {
+      width: 100%;
+    }
+
+    #prices [type='button']:hover {
+      background-color: darkviolet;
+      border-radius: 50px;
+      opacity: 0.7;
+      transition: border-radius 0.5s linear, background-color 1s, opacity 0.5s;
+    }
+
+    footer {
+      width: 100%;
+    }
+
+    ul {
+      width: 100%;
+      padding-left: 0;
+      justify-content: center;
+    }
+
+    footer p {
+      text-align: center;
+      padding-right: 0;
+    }
+
+}
